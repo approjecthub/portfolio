@@ -40,7 +40,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
@@ -66,7 +66,7 @@ const About = () => {
           many small Javscript projects like( Tic Tac Toe game, Snake game, Text
           to speech app etc.).All projects are available in my Github.
         </p>
-      </motion.p>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, idx) => (
