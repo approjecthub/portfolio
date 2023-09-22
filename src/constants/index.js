@@ -11,9 +11,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -155,38 +152,11 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Google doc clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A MERN stack project, which supports all the fetaures of rich text editor(Quill), with real time editing",
     tags: [
       {
         name: "react",
@@ -200,52 +170,101 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Socket.IO",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "NodeJs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/approjecthub/gdoc",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "Food Ordering system",
+    description: `Here I have considered 2 types of users: admin, customer, Admin can perform CRUD operations on item database, Customer can check their purchase history, place new items to 
+      the cart & later proceed to purchase, Authentication tokens are stored for a particular time period to avoid repeated login, User email needs to be unique per user, Authguard, http-interceptor, rxjs, reactive forms etc. concepts
+      are applied`,
     tags: [
       {
-        name: "nextjs",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "nodeJs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/approjecthub/FoodOrderingSystem",
+  },
+  {
+    name: "Slack Clone",
+    description:
+      "Google login, relatime message update, Firestore integrations etc. done in this project",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    source_code_link: "https://slack-clone-2ee4b.web.app/",
+  },
+  {
+    name: "Tree select",
+    description:
+      "Here selection of parent will cause all children to be selected, reverse is also true, need to implement a lot of graph traversal using BFS algo using vanilla javascript",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/approjecthub/tree-select",
+  },
+  {
+    name: "Snake game",
+    description: "A simple snake game implementation using vanilla javascript",
+    tags: [
+      {
+        name: "Javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/approjecthub/snake-game",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

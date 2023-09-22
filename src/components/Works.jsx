@@ -8,14 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
+const ProjectCard = ({ index, name, description, tags, source_code_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -24,15 +17,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[306px] w-full"
+        className="bg-tertiary p-5 rounded-2xl"
       >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
-
+        <div className="relative w-full">
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -53,11 +40,8 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag)=>(
-            <p
-            key={tag.name}
-            className={`text-[14px] ${tag.color}`}
-            >
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -88,7 +72,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex justify-center flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`projects-${index}`} index={index} {...project} />
         ))}
