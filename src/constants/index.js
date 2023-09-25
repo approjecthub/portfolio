@@ -1,19 +1,3 @@
-import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  threejs,
-} from "../assets";
-
 export const navLinks = [
   {
     id: "about",
@@ -29,97 +13,74 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "ReactJS",
-  },
-  {
-    title: "Javascript",
-  },
-  {
-    title: "Typescript",
-  },
-  {
-    title: "NodeJS",
-  },
-  {
-    title: "NextJS",
-  },
-  {
-    title: "NestJS",
-  },
-  {
-    title: "Angular",
-  },
-  {
-    title: "AWS",
-  },
-  {
-    title: "Azure",
-  },
-  {
-    title: "Docker",
-  },
-  {
-    title: "Unit testing",
-  },
-  {
-    title: "Serverless",
-  },
-];
-
 const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: "https://img.icons8.com/color/48/html-5--v1.png",
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: "https://img.icons8.com/stickers/100/css3.png",
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: "https://img.icons8.com/color/48/javascript--v1.png",
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: "https://img.icons8.com/fluency/48/typescript--v1.png",
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+  },
+  {
+    name: "Next JS",
+    icon: "https://img.icons8.com/fluency/48/nextjs.png",
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: "https://img.icons8.com/color/48/redux.png",
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: "https://img.icons8.com/color/48/tailwind_css.png",
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: "https://img.icons8.com/color/48/nodejs.png",
+  },
+  {
+    name: "Nest JS",
+    icon: "https://img.icons8.com/color/48/nestjs.png",
   },
   {
     name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    icon: "https://img.icons8.com/color/48/mongodb.png",
   },
   {
     name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    icon: "https://img.icons8.com/color/48/git.png",
   },
   {
     name: "docker",
-    icon: docker,
+    icon: "https://img.icons8.com/color/48/docker.png",
+  },
+  {
+    name: "Serverless",
+    icon: "https://img.icons8.com/color/48/awslambda.png",
+  },
+  {
+    name: "AWS",
+    icon: "https://img.icons8.com/nolan/64/amazon-web-services.png",
+  },
+  {
+    name: "Azure",
+    icon: "https://img.icons8.com/fluency/48/azure-1.png",
+  },
+  {
+    name: "Unit testing",
+    icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-unit-testing-computer-programming-icons-flaticons-lineal-color-flat-icons.png",
   },
 ];
 
@@ -267,4 +228,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { technologies, experiences, projects };

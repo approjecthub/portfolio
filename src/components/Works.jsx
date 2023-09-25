@@ -16,9 +16,9 @@ const ProjectCard = ({ index, name, description, tags, source_code_link }) => {
     >
       <Tilt
         options={{
-          max: 45,
+          max: 15,
           scale: 1,
-          speed: 450,
+          speed: 200,
         }}
         className="bg-tertiary p-5 rounded-2xl"
       >
