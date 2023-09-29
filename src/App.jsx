@@ -1,14 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
+import React, { Suspense } from "react";
 import {
   About,
   Contact,
   Experience,
-  Hero,
   Navbar,
   Tech,
   Works,
   StarsCanvas,
 } from "./components";
+const Hero = React.lazy(() => import("./components/Hero"));
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <Suspense fallback={<p>Loading...</p>}>
+            <Hero />
+          </Suspense>
         </div>
         <About />
         <Experience />
